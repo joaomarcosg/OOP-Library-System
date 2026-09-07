@@ -1,6 +1,7 @@
-package main.java.joao.library.book.domain;
+package main.java.joao.library.book.console;
 
 import main.java.joao.library.author.domain.Author;
+import main.java.joao.library.book.domain.Book;
 
 public class BookRegistration {
     static void main(String[] args) {
