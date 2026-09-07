@@ -3,13 +3,13 @@ package main.java.joao.library.book.domain;
 import main.java.joao.library.author.domain.Author;
 
 public class Book {
-    String name;
-    String description;
-    double price;
-    String isbn;
-    Author author;
+    public String name;
+    public String description;
+    public double price;
+    public String isbn;
+    public Author author;
 
-    void showDetails() {
+    public void showDetails() {
         System.out.println("Mostrando detalhes do livro");
         System.out.println("Nome: " + name);
         System.out.println("Descrição: " + description);
