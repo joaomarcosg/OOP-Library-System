@@ -17,4 +17,8 @@ public class Book {
         System.out.println("ISBN: " + isbn);
         System.out.println("---");
     }
+
+    public void applyDiscount(double percent) {
+        this.price -= this.price * percent;
+    }
 }
