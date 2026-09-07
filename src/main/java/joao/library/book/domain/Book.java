@@ -18,7 +18,11 @@ public class Book {
         System.out.println("---");
     }
 
-    public void applyDiscount(double percent) {
+    public boolean applyDiscount(double percent) {
+        if (percent > 0.3) {
+            return false;
+        }
         this.price -= this.price * percent;
+        return true;
     }
 }
