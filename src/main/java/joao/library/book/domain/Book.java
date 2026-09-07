@@ -5,7 +5,7 @@ import main.java.joao.library.author.domain.Author;
 public class Book {
     public String name;
     public String description;
-    public double price;
+    private double price;
     public String isbn;
     public Author author;
 
@@ -16,6 +16,18 @@ public class Book {
         System.out.println("Preço(R$): " +price);
         System.out.println("ISBN: " + isbn);
         System.out.println("---");
+    }
+
+    public void addPrice(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public boolean applyDiscount(double percent) {
