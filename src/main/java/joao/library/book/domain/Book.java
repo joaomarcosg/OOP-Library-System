@@ -9,6 +9,15 @@ public class Book {
     public String isbn;
     public Author author;
 
+    public Book(Author author) {
+        this();
+        this.author = author;
+    }
+
+    public Book(){
+        this.isbn = "000-00-00000-00-0";
+    }
+
     public void showDetails() {
         System.out.println("Mostrando detalhes do livro");
         System.out.println("Nome: " + name);
