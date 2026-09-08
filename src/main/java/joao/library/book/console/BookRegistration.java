@@ -11,11 +11,11 @@ public class BookRegistration {
         author.cpf = "123.456.789-10";
 
         Book book = new Book();
-        book.name = "Java 8 prático";
-        book.description = "Novos recursos da linguagem";
+        book.setName("Java 8 prático");
+        book.setDescription("Novos recursos da linguagem");
         book.addPrice(59.90);
-        book.isbn = "978-85-66258-46-6";
-        book.author = author;
+        book.setIsbn("978-85-66258-46-6");
+        book.setAuthor(author);
 
         book.showDetails();
 
@@ -25,11 +25,11 @@ public class BookRegistration {
         otherAuthor.cpf = "123.456.789-10";
 
         Book otherBook = new Book();
-        otherBook.name = "Lógica de Programação";
-        otherBook.description = "Crie os seus Primeiros Programas";
+        otherBook.setName("Lógica de Programação");
+        otherBook.setDescription("Crie os seus Primeiros Programas");
         otherBook.addPrice(59.90);
-        otherBook.isbn = "978-85-66250-22-0";
-        otherBook.author = otherAuthor;
+        otherBook.setIsbn("978-85-66250-22-0");
+        otherBook.setAuthor(otherAuthor);
 
         otherBook.showDetails();
 
