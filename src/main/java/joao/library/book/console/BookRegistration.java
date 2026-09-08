@@ -6,9 +6,9 @@ import main.java.joao.library.book.domain.Book;
 public class BookRegistration {
     static void main(String[] args) {
         Author author = new Author();
-        author.name = "Rodrigo Turini";
-        author.email = "rodrigo.turini@caelum.com.br";
-        author.cpf = "123.456.789-10";
+        author.setName("Rodrigo Turini");
+        author.setEmail("rodrigo.turini@caelum.com.br");
+        author.setCpf("123.456.789-10");
 
         Book book = new Book();
         book.setName("Java 8 prático");
@@ -20,9 +20,9 @@ public class BookRegistration {
         book.showDetails();
 
         Author otherAuthor = new Author();
-        otherAuthor.name = "Paulo Silveira";
-        otherAuthor.email = "paulo.silveira@caelum.com.br";
-        otherAuthor.cpf = "123.456.789-10";
+        otherAuthor.setName("Paulo Silveira");
+        otherAuthor.setEmail("paulo.silveira@caelum.com.br");
+        otherAuthor.setCpf("123.456.789-10");
 
         Book otherBook = new Book();
         otherBook.setName("Lógica de Programação");
