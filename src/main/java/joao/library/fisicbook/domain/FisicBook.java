@@ -1,0 +1,16 @@
+package main.java.joao.library.fisicbook.domain;
+
+import main.java.joao.library.author.domain.Author;
+import main.java.joao.library.book.domain.Book;
+
+public class FisicBook extends Book {
+
+    public FisicBook(Author author) {
+        super(author);
+    }
+
+    public double getPrintingFee() {
+        return this.getPrice() * 0.05;
+    }
+
+}
