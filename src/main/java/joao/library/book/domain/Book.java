@@ -3,11 +3,11 @@ package main.java.joao.library.book.domain;
 import main.java.joao.library.author.domain.Author;
 
 public class Book {
-    public String name;
-    public String description;
+    private String name;
+    private String description;
     private double price;
-    public String isbn;
-    public Author author;
+    private String isbn;
+    private Author author;
 
     public Book(Author author) {
         this();
@@ -25,6 +25,38 @@ public class Book {
         System.out.println("Preço(R$): " +price);
         System.out.println("ISBN: " + isbn);
         System.out.println("---");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
     public void addPrice(double price) {
