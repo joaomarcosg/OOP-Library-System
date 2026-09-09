@@ -2,7 +2,7 @@ package main.java.joao.library.book.domain;
 
 import main.java.joao.library.author.domain.Author;
 
-public class Book {
+public abstract class Book {
     private String name;
     private String description;
     private double price;
