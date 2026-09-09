@@ -2,6 +2,7 @@ package main.java.joao.library.book.console;
 
 import main.java.joao.library.author.domain.Author;
 import main.java.joao.library.book.domain.Book;
+import main.java.joao.library.fisicbook.domain.FisicBook;
 
 public class BookRegistration {
     static void main(String[] args) {
@@ -10,7 +11,7 @@ public class BookRegistration {
         author.setEmail("rodrigo.turini@caelum.com.br");
         author.setCpf("123.456.789-10");
 
-        Book book = new Book();
+        Book book = new FisicBook(author);
         book.setName("Java 8 prático");
         book.setDescription("Novos recursos da linguagem");
         book.addPrice(59.90);
@@ -24,7 +25,7 @@ public class BookRegistration {
         otherAuthor.setEmail("paulo.silveira@caelum.com.br");
         otherAuthor.setCpf("123.456.789-10");
 
-        Book otherBook = new Book();
+        Book otherBook = new FisicBook(otherAuthor);
         otherBook.setName("Lógica de Programação");
         otherBook.setDescription("Crie os seus Primeiros Programas");
         otherBook.addPrice(59.90);
