@@ -71,11 +71,6 @@ public abstract class Book {
         this.price = price;
     }
 
-    public boolean applyDiscount(double percent) {
-        if (percent > 0.3) {
-            return false;
-        }
-        this.price -= this.price * percent;
-        return true;
-    }
+    public abstract boolean applyDiscount(double percent);
+
 }
