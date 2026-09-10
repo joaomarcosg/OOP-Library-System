@@ -2,8 +2,9 @@ package main.java.joao.library.fisicbook.domain;
 
 import main.java.joao.library.author.domain.Author;
 import main.java.joao.library.book.domain.Book;
+import main.java.joao.library.product.domain.Promotional;
 
-public class FisicBook extends Book {
+public class FisicBook extends Book implements Promotional {
 
     public FisicBook(Author author) {
         super(author);

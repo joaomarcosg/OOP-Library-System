@@ -2,8 +2,9 @@ package main.java.joao.library.ebook.domain;
 
 import main.java.joao.library.author.domain.Author;
 import main.java.joao.library.book.domain.Book;
+import main.java.joao.library.product.domain.Promotional;
 
-public class Ebook extends Book {
+public class Ebook extends Book implements Promotional {
     private String waterMark;
 
     public Ebook(Author author) {
