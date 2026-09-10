@@ -72,6 +72,4 @@ public abstract class Book implements Product {
         this.price = price;
     }
 
-    public abstract boolean applyDiscount(double percent);
-
 }
