@@ -13,4 +13,14 @@ public class FisicBook extends Book {
         return this.getPrice() * 0.05;
     }
 
+    @Override
+    public boolean applyDiscount(double percent) {
+        if (percent > 0.3) {
+            return false;
+        }
+        double discount = this.getPrice() * percent;
+        this.setPrice(this.getPrice() - discount);
+        return true;
+    }
+
 }

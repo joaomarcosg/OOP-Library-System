@@ -23,6 +23,8 @@ public class Ebook extends Book {
         if (percent > 0.15) {
             return false;
         }
-        return super.applyDiscount(percent);
+        double discount = this.getPrice() * percent;
+        this.setPrice(this.getPrice() - discount);
+        return true;
     }
 }
