@@ -1,6 +1,8 @@
 package main.java.joao.library.magazine.domain;
 
-public class Magazine {
+import main.java.joao.library.product.domain.Product;
+
+public class Magazine implements Product {
     private String name;
     private String description;
     private double price;

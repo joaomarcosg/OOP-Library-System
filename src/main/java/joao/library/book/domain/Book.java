@@ -1,8 +1,9 @@
 package main.java.joao.library.book.domain;
 
 import main.java.joao.library.author.domain.Author;
+import main.java.joao.library.product.domain.Product;
 
-public abstract class Book {
+public abstract class Book implements Product {
     private String name;
     private String description;
     private double price;
