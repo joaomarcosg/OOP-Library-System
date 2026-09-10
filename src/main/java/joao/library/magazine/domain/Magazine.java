@@ -9,6 +9,7 @@ public class Magazine implements Product, Promotional {
     private double price;
     private Publisher publisher;
 
+    @Override
     public boolean applyDiscount(double percent) {
         if (percent > 0.1) {
             return false;
