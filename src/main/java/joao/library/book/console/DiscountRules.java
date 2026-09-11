@@ -9,7 +9,7 @@ public class DiscountRules {
     static void main(String[] args) {
         Author author = new Author();
         author.setName("Rodrigo Turini");
-        Book book = new FisicBook(author);
+        FisicBook book = new FisicBook(author);
         book.addPrice(59.90);
 
         System.out.println("Valor atual(R$): " + book.getPrice());
