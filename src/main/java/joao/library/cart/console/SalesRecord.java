@@ -17,8 +17,14 @@ public class SalesRecord {
         Ebook ebook = new Ebook(author);
         ebook.setName("Test-Driven Development");
 
+        if (fisicBook.applyDiscountOf10Percent()) {
+            System.out.println("Valor agora é (R$): " + fisicBook.getPrice());
+        }
+
         ShoppingCart cart = new ShoppingCart();
         cart.add(fisicBook);
         cart.add(ebook);
+
+
     }
 }
